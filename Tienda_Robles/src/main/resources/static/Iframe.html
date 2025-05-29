@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<!DOCTYPE html>
+<!-- Se actualiza la página index para que contenga nuevas etiquetas meta y 
+     demás etiquetas para la semántica del body-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de iFrames</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            background-color: #343a40;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav li {
+            margin: 0 20px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #495057;
+        }
+        
+        aside {
+            background-color: #e9ecef;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-left: 5px solid #007bff;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        #contenido {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        article {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            background-color: #fdfdfd;
+        }
+        
+        article header {
+            background: none;
+            color: #343a40;
+            padding: 0 0 15px 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        article h3 {
+            margin: 0;
+            color: #495057;
+        }
+        
+        iframe {
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: block;
+            margin: 0 auto;
+        }
+        
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+        
+        .iframe-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .iframe-description {
+            margin-bottom: 15px;
+            color: #6c757d;
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 5px 0;
+            }
+            
+            iframe {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ejemplos de iFrames</h1>
+        <p>Integración de contenido externo en páginas web</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#index.html">Inicio</a></li>
+            <li><a href="#Ejemplo 2.html">Audio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <aside>
+        <h3>¿Qué son los iFrames?</h3>
+        <p>Los iFrames (inline frames) permiten incrustar documentos HTML dentro de otros documentos HTML, facilitando la integración de contenido externo como mapas, videos y sitios web.</p>
+    </aside>
+
+    <section id="contenido">
+        <h2>Ejemplos de iframe</h2>
+        
+        <article>
+            <header>
+                <h3>La página de la Fidelitas</h3>
+            </header>
+            <div class="iframe-container">
+                <div class="iframe-description">Sitio web oficial de la Universidad Fidelitas</div>
+                <iframe src="https://sistemas.ufidelitas.ac.cr/" 
+                        width="700" 
+                        height="400"
+                        title="Universidad Fidelitas">
+                </iframe>
+            </div>
+            <footer>Escuela de Sistemas de la Fide</footer>
+        </article>
+        
+        <article>
+            <header>
+                <h3>Video de Youtube</h3>
+            </header>
+            <div class="iframe-container">
+                <div class="iframe-description">Video educativo integrado desde YouTube</div>
+                <iframe width="500" 
+                        height="280"
+                        src="https://www.youtube.com/embed/WH1XP-BeTw"
+                        title="Youtube"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <footer>Alguien mostrando html5</footer>
+        </article>
+        
+        <article>
+            <header>
+                <h3>Stem Center</h3>
+            </header>
+            <div class="iframe-container">
+                <div class="iframe-description">Ubicación del Stem Center en Google Maps</div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.980528051695!2d-84.03794158516743!3d9.93410689284851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e342b1011a01%3A0x5f5b0e6b4b4b4b4b!2sStem%20Center!5e0!3m2!1sen!2scr!4v1589284851234"
+                        width="600"
+                        height="450"
+                        style="border:0;" 
+                        allowfullscreen=""
+                        title="Stem Center Location">
+                </iframe>
+            </div>
+            <footer>La ubicación del Stem Center en Google maps</footer>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ejemplos de iFrames - Todos los derechos reservados</p>
+        <p>Desarrollado con fines educativos</p>
+    </footer>
+</body>
+</html>

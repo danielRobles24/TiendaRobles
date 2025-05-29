@@ -1,79 +1,143 @@
 <!DOCTYPE html>
-<!--
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
-<!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <title>Esto es un título</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="">
+    <title>FideShop</title>
 </head>
+
 <body>
-
-    <div class="content">TODO write content</div>
-
-    <!-- Encabezado y párrafo -->
-    <h1 style="color:blue">Este es un encabezado H1</h1>
-    <p style="font-size:16px">Este es un párrafo de ejemplo con texto de Lorem Ipsum.</p>
-
-    <!-- Bloques -->
-    <div style="background-color:lightgrey; padding:10px;">
-        <p>Este es un bloque agrupado con estilo general.</p>
+    <!--Header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FideShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Audios.html">Audios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ejemplo 2.html">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Iframe.html">iFrame</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Formularios.html">Formulario</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Cards de la pagina -->
+    <div class="container-custom">
+        <div class="row-custom">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Audios</h5>
+                    <p class="card-text">Escucha los audios</p>
+                    <a href="Audios.html" class="btn btn-primary">Ir a Audios</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Videos</h5>
+                    <p class="card-text">Ve los videos que quieras</p>
+                    <a href="Ejemplo 2.html" class="btn btn-primary">Ir a Videos</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Iframe</h5>
+                    <p class="card-text">Ve los iFrames que deses </p>
+                    <a href="Iframe.html" class="btn btn-primary">Ir a Iframe</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Formularios</h5>
+                    <p class="card-text">Ve nuestros ultimos formularios</p>
+                    <a href="Formularios.html" class="btn btn-primary">Ir a Formularios</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Estilos básicos -->
-    <strong>Texto en negrita</strong>
-    <u>Texto subrayado</u>
-    <i>Texto en cursiva</i>
 
-    <!-- Encabezados HTML -->
-    <h1>Encabezado H1</h1>
-    <h2>Encabezado H2</h2>
-    <h3>Encabezado H3</h3>
-    <h4>Encabezado H4</h4>
-    <h5>Encabezado H5</h5>
-    <h6>Encabezado H6</h6>
 
-    <!-- Párrafos personalizados -->
-    <p style="font-family:Comic Sans MS; font-size:150%; background-color:blue; color:white;">
-        H2O = Agua
-    </p>
-    <p>Fórmula notable: (a + b)² = a² + 2ab + b²</p>
+    <!--footer de la pagina -->
+    <div class="footer">
 
-    <!-- Listas -->
-    <ul>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-    </ul>
-    <ol type="1">
-        <li>Primer elemento</li>
-        <li>Segundo elemento</li>
-    </ol>
-
-    <!-- Enlaces -->
-    <a href="#abajo">Ir abajo</a>
-    <a name="abajo"></a>
-    <a href="otra_pagina.html">Enlace local</a>
-    <a href="https://ejemplo.com">Enlace remoto</a>
-    <a href="mailto:correo@ejemplo.com">Enviar correo</a>
-    <a href="archivo.pdf">Descargar archivo</a>
-
-    <!-- Imagen -->
-    <img src="imagen.jpg" width="300" height="200" />
-
-    <!-- Formulario -->
-    <form action="procesar.php">
-        <input type="text" name="nombre" placeholder="Nombre" />
-        <input type="submit" value="Enviar" />
-    </form>
-
-    <!-- Footer -->
-    <footer>
-        Hola soy un footer
-    </footer>
-
+        <footer style="background-color: rgb(226, 226, 226);">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 mb-4">
+                        <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">FideShop</h5>
+                        <p>
+                            Somos una Pagina que ayuda a vender articulos para 
+                            la universidad
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">links</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1">
+                                <a href="#!" style="color: #4f4f4f;">Preguntas Frecuentes</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="#!" style="color: #4f4f4f;">Como Usar</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="#!" style="color: #4f4f4f;">Ayuda</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color: #4f4f4f;">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="mb-1" style="letter-spacing: 2px; color: #818963;">Atencion al Cliente</h5>
+                        <table class="table" style="color: #4f4f4f; border-color: #666;">
+                            <tbody>
+                                <tr>
+                                    <td>Lun - Vier:</td>
+                                    <td>8am - 9pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Sab:</td>
+                                    <td>10am - 12am</td>
+                                </tr>
+                                <tr>
+                                    <td>Dom:</td>
+                                    <td>Cerrado </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2024 Copyright:
+                <a class="text-dark" href="">AmbienteWeb.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
 
+</html>
